@@ -1,7 +1,7 @@
 
 
 .nav-item{
-	font-size:30px;
+	font-size:35px;
 	font-family: "Open Sans", "Fira Sans", "Lucida Sans";
 	color: #fff;
 }
@@ -17,13 +17,15 @@ body{
 	
 }
 	
-.container1 .content1{
-	position: absolute;
-	margin-top:-30%;
-	background: rgba(0, 0, 0, 0.5);
-	width:15%;
+.flex-container {
+	display: flex-right;
+	position: absolute; 
+	transform: translateX(380%);
+	background: rgba(0, 0, 0, 0);
+	width:20%;
 	height:35%;
 	padding:10px;
+	margin-top:-42%
 }
 
 .intro {
@@ -37,7 +39,7 @@ body{
 	margin-top:-40%; 
 	background: rgba(0, 0, 0, 0.5); 
 	color: #fff; 
-	width: 30%; 
+	width: 40%; 
 	padding: 20px; 
 	
 }
