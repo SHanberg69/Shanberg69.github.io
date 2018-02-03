@@ -1,0 +1,189 @@
+/*-- is this needed?--*/
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+body {
+	font-family:"Lucida Console", Monaco, monospace;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+	
+}
+/*--home page--*/
+
+.home_container{
+	display:flex;
+	padding:0;
+	margin:0;
+	flex-direction: row;
+	justify-content:space-around;
+
+	
+}
+
+.name_box{
+	flex-shrink:1;
+	background: rgba(0, 0, 0, .5); 
+	color: #fff;
+	margin-top: 15%;
+	margin-left: -75%;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:20px;
+	padding-bottom:20px;
+	
+}
+h1{
+	font-size: 40px
+}
+
+
+h5{
+	text-align:right;
+	
+}
+/*--navagation--*/
+
+.nav{
+	flex-shrink:1;
+	background: rgba(0, 0, 0, 0); 
+	color: #fff;
+	text-align:right;
+	margin-top:-10%;
+	margin-left:80% ;
+	position:fixed;
+
+}
+
+.nav-item{
+	font-size:30px;
+	font-family: "Open Sans", "Fira Sans", "Lucida Sans";
+	color: #fff;
+}
+/*--/navagation--*/
+
+
+
+
+.programs{
+	padding-top: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content:left;
+	flex-wrap:wrap;
+	margin-right:30%;
+}
+
+
+
+.glass {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+	background-color:#E9C99E;
+    width: 300px;
+	height: 300px;
+	position: relative;
+	padding: 4% 4% 4% 4%;
+	margin: 2% 2% 2% 2%;
+	
+
+}
+
+img {
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.button{
+	color:fff;
+	font:sans serif;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	display: inline-block; 
+	border-radius: 10px; 
+}
+
+
+.dev{
+	margin-top:600px;
+	background:#339966;
+	width:100%;
+	height:1000px;
+	padding: 30px 0 0 20px;
+	display:flexible
+
+}
+
+.professional{
+
+	background:#669999;
+	width:100%;
+	height:1000px;
+	padding: 30px 0 0 20px;
+	
+}
+
+
+.rela{
+
+	background:#999966;
+	width:100%;
+	height:1000px;
+	padding: 30px 0 0 20px;
+}
+
+.recent{
+
+	background:#339966;
+	width:100%;
+	height:500px;
+	padding: 30px 0 0 20px;
+}
+
+
+.oth{
+
+
+	background:#669999;
+	width:100%;
+	height:500px;
+	padding: 30px 0 0 20px;
+}
+
+
+
+
+
+
+
+
+
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 30px;
+  }
+}
